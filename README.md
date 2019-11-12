@@ -12,16 +12,10 @@ word sense disambiguation, NLP feature extraction, decision list rules
 
   Example: 
 
-  - Following is the <context> from the test file. "lines" is the ambigous word. 
-  - This project is trying to identfy the sense (could be "product" or "phone") of "lines" in this sentense. 
+  Following sentence is from the test file. "lines" is the ambigous word. This project is trying to identfy the sense (could be "product" or "phone") of "lines" in this sentense. 
 
-  <instance id="line-n.w8_106:13309:">
-  <context>
- 
-  But he doesn't apologize for the idea, because ZapMail was an effort to address a real and continuing problem. Facsimile machines, which transmit documents over telephone <head>lines</head> , are eating into Federal's overnight business.
+    - But he doesn't apologize for the idea, because ZapMail was an effort to address a real and continuing problem. Facsimile machines, which transmit documents over telephone <head>lines</head> , are eating into Federal's overnight business.
   
-  </context>
-
 
 2.  Features were used from the training dataset (from higher priority to lower priority):
 
