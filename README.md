@@ -22,6 +22,7 @@ word sense disambiguation, NLP feature extraction, decision list rules
 
 
 2.  Features were used from the training dataset (from higher priority to lower priority):
+
     - Two words before and after the ambiguous word.
     - One word before and after the ambiguous word.
     - Two words before the ambiguous word.        
@@ -48,6 +49,7 @@ word sense disambiguation, NLP feature extraction, decision list rules
 
 
 5. Algorithm 
+
     -> 1) import train, test files based on user's input
     
     -> 2) extract instance ID, sense ID and the associated <context> from "line-train.xml"
@@ -67,8 +69,8 @@ word sense disambiguation, NLP feature extraction, decision list rules
     -> 6) extract instance ID and the ambiguous associated <context> from "line-test.xml"
     
     -> 7) iterate each <context>, extract six features based the location of ambigouous word, same as 4)
-          iterate each feature and look up the associated dataframes created at 5) to calculate log-likelihood of P(product|feature)|P(phone|feature)
-          and return the sense which has higher P(product|feature) and P(product|phone)
+          iterate each feature and look up the associated dataframes created at 5) to calculate log-likelihood of P(product|feature)|P(phone|feature) and return the sense which has higher P(product|feature) and P(product|phone)
+  
           -> if the feature is not exist, return sense "product", because it has higher occurrence than "phone" in training dataset
           -> if P(product|feature) = P(phone|feature), return sense "product"
     
@@ -78,9 +80,10 @@ word sense disambiguation, NLP feature extraction, decision list rules
 
 6. How to run the scripts
 
-    - please place "decision-list.py" and "scorer.py" in the same directory
+  - please place "decision-list.py" and "scorer.py" in the same directory
     
 6.1 decision-list.py
+
     - Create a folder called "PA3" in the same directory with "decision-list.py"
     - Put these 3 files under the folder "PA3": line-train.xml, line-test.xml, line-answers.txt
     - Open terminator, for example: Windows "Command Prompt"
@@ -96,6 +99,7 @@ word sense disambiguation, NLP feature extraction, decision list rules
           the log-likelihood scores associated with the features. It will also store the sense that was predicted and the instance ID. 
 
 6.2 scorer.py
+
     - Open terminator, for example: Windows "Command Prompt"
     - Navigate to the directory of "scorer.py"
     - Enter "python scorer.py my-line-answers.txt line-answers.txt" and execute the script
