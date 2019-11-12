@@ -17,7 +17,9 @@ word sense disambiguation, NLP feature extraction, decision list rules
 
   <instance id="line-n.w8_106:13309:">
   <context>
-  <s>But he doesn't apologize for the idea, because ZapMail was an effort to address a real and continuing problem.</s><s>Facsimile machines, which transmit documents over telephone <head>lines</head> , are eating into Federal's overnight business.</s>
+ 
+  But he doesn't apologize for the idea, because ZapMail was an effort to address a real and continuing problem.</s><s>Facsimile machines, which transmit documents over telephone <head>lines</head> , are eating into Federal's overnight business.
+  
   </context>
 
 
